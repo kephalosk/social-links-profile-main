@@ -25,77 +25,102 @@
           font-family: "InterSemi";
           src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype');
       }
+      @media (max-width: 450px) {
+          main {
+              background-color: hsl(0, 0%, 12%);
+              border-radius: 15px;
+              margin: 115px 20px;
+              padding: 25px 25px 15px;
+              width: calc(100% - 40px);
+          }
+      }
 
-    .attribution {
-        font-size: 11px;
-        text-align: center;
-    }
-    .attribution a {
-        color: hsl(228, 45%, 44%);
-    }
-    body {
-        align-items: center;
-        background-color: hsl(0, 0%, 8%);
-        color: hsl(0, 0%, 100%);
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        font-family: Inter,sans-serif;
-        font-size: 14px;
-    }
-    button {
-        background-color: hsl(0, 0%, 20%);
-        border: 0;
-        border-radius: 10px;
-        color: hsl(0, 0%, 100%);
-        font-family: InterSemi,sans-serif;
-        font-size: 14px;
-        margin-bottom: 15px;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        width: 100%;
-    }
-    button:hover {
-        background-color: hsl(75, 94%, 57%);
-        color: hsl(0, 0%, 8%);
-    }
-    h1 {
-        margin-bottom: 10px;
-    }
-    header {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-    }
-    header p{
-        font-weight: bold;
-        color: hsl(75, 94%, 57%);
-        margin: 0;
-    }
-    img {
-        border-radius: 100%;
-        width: 90px;
-        height: auto;
-        margin-bottom: 10px;
-    }
-    main {
-        background-color: hsl(0, 0%, 12%);
-        border-radius: 15px;
-        max-width: 320px;
-        margin-bottom: 170px;
-        margin-top: 170px;
-        padding: 40px 40px 25px;
-        width: 100%;
-    }
-    section {
-        align-items: center;
-        flex-direction: column;
-        display: flex;
-    }
-    section p {
-        margin: 25px 0;
-    }
+      @media (min-width: 451px) {
+          main {
+              background-color: hsl(0, 0%, 12%);
+              border-radius: 15px;
+              max-width: 400px;
+              margin-bottom: 170px;
+              margin-top: 170px;
+              padding: 40px 40px 25px;
+              width: 100%;
+          }
+      }
+
+      .attribution {
+          font-size: 11px;
+          text-align: center;
+      }
+      .attribution a {
+          color: hsl(228, 45%, 44%);
+      }
+
+      * {
+          box-sizing: border-box;
+      }
+
+      body {
+          align-items: center;
+          background-color: hsl(0, 0%, 8%);
+          color: hsl(0, 0%, 100%);
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          font-family: Inter,sans-serif;
+          font-size: 14px;
+      }
+
+      button {
+          background-color: hsl(0, 0%, 20%);
+          border: 0;
+          border-radius: 10px;
+          color: hsl(0, 0%, 100%);
+          font-family: InterSemi,sans-serif;
+          font-size: 14px;
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          padding-top: 15px;
+          width: 100%;
+      }
+
+      button:hover {
+          background-color: hsl(75, 94%, 57%);
+          color: hsl(0, 0%, 8%);
+      }
+
+      h1 {
+          margin-bottom: 10px;
+      }
+
+      header {
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          display: flex;
+      }
+
+      header p{
+          font-weight: bold;
+          color: hsl(75, 94%, 57%);
+          margin: 0;
+      }
+
+      img {
+          border-radius: 100%;
+          width: 90px;
+          height: auto;
+          margin-bottom: 10px;
+      }
+
+      section {
+          align-items: center;
+          flex-direction: column;
+          display: flex;
+      }
+
+      section p {
+          margin: 25px 0;
+      }
   </style>
 </head>
 <body>
